@@ -1,6 +1,6 @@
 'use strict';
 
-const jsonFile = require('../../../persons.json');
+const jsonFile = require('../../persons.json');
 
 let persons = jsonFile.persons;
 let nextId = persons.length + 1;

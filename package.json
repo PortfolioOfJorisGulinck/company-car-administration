@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0", // nieuw
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "body-parser": "latest",
     "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
@@ -30,8 +30,8 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.2",
-    "file-loader": "^6.0.0", // nieuw
-    "html-loader": "^1.1.0", // nieuw
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
     "html-webpack-externals-plugin": "^3.8.0",
     "html-webpack-plugin": "^4.2.0",
     "jest": "^25.3.0",
