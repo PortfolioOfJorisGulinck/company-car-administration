@@ -1,0 +1,15 @@
+// voorlopig geen mixins
+
+// voorbeeld gebruik:
+/*
+@mixin transform($schaalx, $schaaly:$schaalx) {
+	-webkit-transform: scale($schaalx,$schaaly);
+	-ms-transform: scale($schaalx,$schaaly);
+	transform: scale($schaalx,$schaaly);
+	}
+
+-->
+@use "mixins" as m;
+
+@include m.transform
+*/

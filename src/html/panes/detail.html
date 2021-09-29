@@ -1,0 +1,87 @@
+<div id="personDetailPage" class="tab-pane">
+    <header id="articleHeader">
+        <h2>Persoon</h2>
+        <h3 id="personIdHeader"></h3>
+    </header>
+    <section id="formSection" class="my-3">
+        <form id="personForm" class="needs-validation" novalidate> <!-- Vervangt browser feedback met Bootstrap feedback -->
+            <div class="form-row">
+                <div class="col-lg-8">
+                    <div class="form-row">
+                        <div id="firstColFirstRow" class="form-group col-md-6">
+                            <label for="voornaam" class="d-none d-md-block">Voornaam</label>
+                            <input id="voornaam" class="form-control" name="first_name" type="text"
+                                   placeholder="Voornaam" required disabled>
+                            <div class="valid-feedback">Looks good!</div> <!-- Bootstrap feedback -->
+                            <div class="invalid-tooltip">Geef aub een geldige voornaam!</div> <!-- Bootstrap feedback -->
+                        </div>
+                        <div id="secondColFirstRow" class="form-group col-md-6">
+                            <label for="achternaam" class="d-none d-md-block">Achternaam</label>
+                            <input id="achternaam" class="form-control" name="last_name" type="text"
+                                   placeholder="Achternaam" required disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div id="firstColSecondRow" class="form-group col-md-6">
+                            <label for="geboortedatum" class="d-none d-md-block">Geboortedatum</label>
+                            <input id="geboortedatum" class="form-control" name="birth_day" type="date"
+                                   placeholder="dd/mm/jjjj" data-toggle="tooltip"
+                                   title="Waarde moet 01/01/1950 of later zijn" required disabled>
+                            <div class="invalid-feedback">De leeftijd moet tussen 16 en 67 jaar zijn.</div>
+                        </div>
+                        <div id="secondColSecondRow" class="form-group col-md-6">
+                            <label for="jarenDienst" class="d-none d-md-block">Jaren dienst</label>
+                            <input id="jarenDienst" class="form-control" name="yearsService" type="number"
+                                   placeholder="Jaren dienst" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div id="firstColThirdRow" class="form-group col-md-6">
+                            <label for="geslacht" class="d-none d-md-block">Geslacht</label>
+                            <select id="geslacht" class="form-control" name="gender" required disabled>
+                                <option value="M">Man</option>
+                                <option value="F">Vrouw</option>
+                            </select>
+                        </div>
+                        <div id="secondColThirdRow" class="form-group col-md-6">
+                            <div class="form-check p-4">
+                                <input type="checkbox" id="gehuwd" class="form-check-input" name="married"
+                                       value="married" disabled>
+                                <label for="gehuwd" class="form-check-label">Gehuwd?</label>
+                            </div>
+                            <div id="upload-form" class="d-none">
+                                <p></p>
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Foto opladen</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="thirdCol" class="col-lg-4">
+                    <div>
+                        <img id="personImage" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="formSectionButtons">
+            <button class="btn btn-primary" id="newButton">Nieuw</button>
+            <button class="btn btn-outline-primary" id="allPersonsButton">Toon alle personen</button>
+            <button id="saveButton" type="submit" form="personForm" formmethod="post"
+                    class="d-none btn btn-primary">
+                Opslaan
+            </button>
+            <button id="cancelButton" class="d-none btn btn-outline-primary">Annuleren</button>
+        </div>
+    </section>
+
+    <section id="carSection" class="mt-3">
+        <h2>Wagen(s)</h2>
+        <div id="carContainer" class="row">
+            <!-- CAR CARDS -->
+        </div>
+    </section>
+</div>

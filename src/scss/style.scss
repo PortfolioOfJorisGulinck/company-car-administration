@@ -1,0 +1,22 @@
+@use "utility" as u;
+@import "vars";
+
+body {
+  min-height: 100%;
+}
+#personsTable {
+  tr:hover {
+    background-color: $dark-color;
+    color: u.textForBackground($dark-color);
+  }
+}
+
+#upload-form {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.makeInvisible {
+  display: none;
+}
+

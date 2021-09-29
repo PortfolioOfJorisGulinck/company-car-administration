@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  min-height: 100%;
+}
+
+#personsTable tr:hover {
+  background-color: #0F1626;
+  color: #ffffff;
+}
+
+#upload-form {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.makeInvisible {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

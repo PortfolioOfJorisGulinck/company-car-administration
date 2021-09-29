@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <title>Groeiproject</title>
+</head>
+<body>
+<section class="container mb-4">
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand" href="#personsPage">Personeelsbeheer</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent"
+             data-toggle="collapse"
+             data-target="#navbarSupportedContent.show">
+            <ul class="navbar-nav nav mr-auto" id="myTab">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#personsPage">Lijst Personen</a>
+                </li>
+                <li class="nav-item">
+                    <a id="personDetailPageNavLink" class="nav-link" data-toggle="tab" href="#personDetailPage">Detail
+                        Personen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#aboutPage">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="personsHeader" class="jumbotron">
+        <div class="container">
+            <h1>Welkom op mijn groeiproject</h1>
+            <p>Dit is de website met een overzicht van de personen en zijn wagens.</p>
+        </div>
+    </header>
+    <section class="container">
+        <div class="tab-content">
+            <%= require('html-loader!./panes/list.html') %>
+            <%= require('html-loader!./panes/detail.html') %>
+            <%= require('html-loader!./panes/about.html') %>
+        </div>
+    </section>
+</section>
+<footer class="footer align-bottom container bg-dark p-3">
+    <div class="row row-cols-3">
+        <div class="text-center text-light">
+            <span class="fas fa-phone" aria-hidden="true"></span> 03/1234567
+        </div>
+        <div class="text-center text-light">
+            <span class="fas fa-envelope" aria-hidden="true"></span> info@joske.be
+        </div>
+        <div class="text-center text-light">
+            <span class="fab fa-facebook" aria-hidden="true"></span> Facebook
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/047a661e0e.js" crossorigin="anonymous"></script>
+</html>
